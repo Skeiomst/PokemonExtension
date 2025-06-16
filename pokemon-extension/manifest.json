@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Pokémon Platinum Info Viewer",
+    "version": "1.0",
+    "description": "Detecta Pokémon en tablas y muestra su información desde PokéAPI.",
+    "icons": {
+      "128": "icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ],
+    "permissions": ["scripting"]
+  }
+  
